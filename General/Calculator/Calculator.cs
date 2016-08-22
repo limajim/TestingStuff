@@ -7,13 +7,19 @@ using General.Calculator.Interfaces;
 
 namespace General.Calculator
 {
-    public class Calculator : ICalculator
+    public class Calculator
     {
-        private Keyboard _keyboard;
+        private IKeyboard _keyboard;
 
         public Calculator()
         {
             _keyboard = new Keyboard();
+
+        }
+
+        public Calculator( IKeyboard keyboard)
+        {
+            _keyboard = keyboard;
 
         }
 
@@ -25,7 +31,7 @@ namespace General.Calculator
             return value1 + value2;
         }
 
-        public Keyboard GetKeyboard()
+        public IKeyboard GetKeyboard()
         {
             return _keyboard;
         }

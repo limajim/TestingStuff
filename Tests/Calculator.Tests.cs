@@ -40,20 +40,16 @@ namespace Tests
         [TestMethod]
         public void Calculator_Add_When_MOQ()
         {
-            // arrange
-            var value1 = 1;
-            var value2 = 2;
-
-
-            var mockCalulator = new Mock<ICalculator>();
-            
-
+            // Set up the mock
+            var keyboard = new Mock<IKeyboard>();
+            var calculator = new Calculator(keyboard.Object);
 
             // Act
-            var total = new Calculator().Add(value1, value2);
+            // Set what the method should return
+            keyboard.Setup(theKeyboard => theKeyboard.GetKeyboardType()).Returns(KeyboardType.Scientific);
 
             // Assert
-            Assert.AreEqual(total, 3);
+            Assert.AreEqual(calculator.GetKeyboard().GetKeyboardType(), KeyboardType.Scientific);
         }
 
     }

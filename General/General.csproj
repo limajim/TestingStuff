@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="Calculator\Keyboard.cs" />
     <Compile Include="Calculator\Calculator.cs" />
-    <Compile Include="Calculator\Interfaces\iCalculator.cs" />
+    <Compile Include="Calculator\Interfaces\IKeyboard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
