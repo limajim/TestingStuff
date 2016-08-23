@@ -30,17 +30,24 @@ namespace Bowling
 
             for (int frame = 0;frame < TOTAL_FRAMES; frame++)
             {
-                if (IsStrike(frameRollNumber))
-                {
-                    score += StrikeScore(frameRollNumber);
-                }
-                else
-                {
-                    score += NonStrikeScore(frameRollNumber);
-                }
+                score += GetFrameScore(frameRollNumber);
                 frameRollNumber = NextFrameRollNumber(frameRollNumber);
             }
             return score;
+        }
+
+        private int GetFrameScore( int frameRollNumber)
+        {
+            int frameScore = 0;
+            if (IsStrike(frameRollNumber))
+            {
+                frameScore = StrikeScore(frameRollNumber);
+            }
+            else
+            {
+                frameScore = NonStrikeScore(frameRollNumber);
+            }
+            return (frameScore);
         }
 
         private int NextFrameRollNumber( int frameRollNumber )

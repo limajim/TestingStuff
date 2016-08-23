@@ -16,7 +16,11 @@ namespace Fibonacci
             else if( n <= 2)
                 return 1;
 
-            return Fib(n-1) + Fib(n-2);
+            return CalculateValue(n);
+        }
+        private static int CalculateValue(int n)
+        {
+            return Fib(n - 1) + Fib(n - 2);
         }
     }
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bowling", "Bowling\Bowling.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "General", "General\General.csproj", "{F3C37FE0-613F-49EF-BE8E-546A971089F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DepencyInjectionExample", "DepencyInjectionExample\DepencyInjectionExample.csproj", "{193CFF27-056C-4F2B-9C9A-7B53D473D1DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F3C37FE0-613F-49EF-BE8E-546A971089F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3C37FE0-613F-49EF-BE8E-546A971089F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3C37FE0-613F-49EF-BE8E-546A971089F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{193CFF27-056C-4F2B-9C9A-7B53D473D1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{193CFF27-056C-4F2B-9C9A-7B53D473D1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{193CFF27-056C-4F2B-9C9A-7B53D473D1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{193CFF27-056C-4F2B-9C9A-7B53D473D1DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
